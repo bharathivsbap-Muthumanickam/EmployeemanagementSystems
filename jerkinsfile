@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Bulid') {
+            steps {
+                echo 'Buliding the app'
+            }
+        }
+        stage('deploy'){
+        steps {
+            echo 'Deploying the app'
+        }
+            
+        }
+    }
+}
